@@ -1,0 +1,254 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+	<title>Cotons ai</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="../assets/css/feather.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/new-css.css">
+	<script src="https://kit.fontawesome.com/fe40853e81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<div class="header">
+			<div class="header-left">
+				<a href="../home.html" class="logo">
+						<img src="../assets/img/logo.svg" width="35" height="35" alt=""> <span><img src="../assets/img/text.svg" width="120" height="30" alt=""></span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><img src="../assets/img/icons/bar-icon.svg" alt=""></a>
+			<a id="mobile_btn" class="mobile_btn float-start" href="#sidebar"><img src="../assets/img/icons/bar-icon.svg"
+					alt=""></a>
+			
+			<ul class="nav user-menu float-end">
+				<li class="nav-item dropdown has-arrow user-profile-list">
+					<a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
+						<div class="user-names">
+							<span>Welcome</span>
+
+							<h5> Mr.Saravanan </h5>
+						</div>
+						<span class="user-img">
+							<img src="../assets/img/user-06.jpg" alt="Admin">
+						</span>
+					</a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-01.svg" alt=""></span> <span> Settings </span> </a>
+					<a class="dropdown-item" href="../index.html"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-02.svg" alt=""></span> <span> Logout </span> </a>
+               </div>
+				</li>
+
+			</ul>
+			<div class="dropdown mobile-user-menu float-end">
+				<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
+						class="fa-solid fa-ellipsis-vertical"></i></a>
+				<div class="dropdown-menu dropdown-menu-end">
+					
+					<a class="dropdown-item">Settings</a>
+					<a class="dropdown-item" href="../index.html">Logout</a>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Menus</li>
+                            <li class="submenu">
+                                <a href="../home.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-17.svg"
+                                    alt=""></span> <span> Leads </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../leads/new-lead.html">New Lead</a></li>
+                                    <li><a href="../leads/visit-table.html">Visits</a></li>
+                                    <li><a href="../leads/demo.html">Demo</a></li>
+                                    <li><a href="../leads/trial.html">Trial</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../active-leads/active-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" 
+                                    alt=""></span> <span>Active Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../cold-leads/cold-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-18.svg" 
+                                    alt=""></span> <span>Cold Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../subscription/subscription.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-09.svg" 
+                                    alt=""></span> <span>Subscription</span></a>
+                            </li>
+                          <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg"
+                                    alt=""></span> <span> Support </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../support/device.html"> Device </a></li>
+                                    <li><a href="../support/software.html"> Software </a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-15.svg"
+                                    alt=""></span> <span> Inventory </span> <span class="menu-arrow"></span></a>
+				<ul style="display: none;">
+                                    <li class="submenu">
+								<a href="#"><span> Inward </span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="../inventory/return-device.html">Return Devices</a></li>
+                                        <li><a href="../inventory/import.html">Import</a></li>
+										<li><a href="../inventory/refurbish.html">Refurbish</a></li>
+										
+                                    </ul>
+                            </li>
+							<li class="submenu">
+								<a href="#"><span> Outward </span> <span class="menu-arrow"></span></a>
+									<ul style="display: none;">
+										<li><a href="../inventory/outward-trial.html">Trial</a></li>
+										<li><a href="../inventory/outward-subscription.html">Subscription</a></li>
+										<li><a href="../inventory/decommission.html">Decommission</a></li>
+									</ul>
+							</li>
+							
+							<li><a href="../inventory/stock.html">Stock</a></li>
+				</ul>
+					</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+		<div class="page-wrapper">
+			<div class="content">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="../home.html" class="text-secondary">Home</a></li> 
+								<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+								<li class="breadcrumb-item"><a href="subscription.html"> Subscription </a></li>
+							
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- /Table -->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card card-table show-entire">
+							<div class="card-body">
+							
+								<div class="page-table-header mb-2">
+								<div class="row align-items-center">
+									<div class="horizontal d-flex justify-content-end">
+										<!--<div class="doctor-table-blk">
+											<h3 class="card-title table-heading d-none d-md-block">Subscription</h3> 	
+										</div>-->
+										
+										<div class="top-nav-search">
+											<form class="m-0">
+												<input type="text" class="form-control bg-grey" placeholder="Search here">
+												<a class="btn"></a>
+											</form>
+										</div>				
+									</div>
+								</div>
+							</div>
+								
+								<!-- /Table Header -->
+								<div class="table-responsive text-nowrap">
+									<table class="datatable table-striped table">
+                                    <thead class="table-secondary">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Primary</th>
+                                            <th>Email</th>
+                                            <th>Contact</th>
+											<th>Devices</th>
+											<th>Subscription</th>
+                                            <th>Status</th>
+											
+                                        </tr>
+                                    </thead>
+                                     <tbody>
+                                        
+										<tr>
+                                            <td><a href="../subscription/subscription-activity.html" class="hospital-hover">Mayo Clinic</a></td>
+                                            <td>Saravanan</td>
+                                            <td>Saravanan@gmail.com</td>
+                                            <td>91 98765 43210</td>
+											<td class="">10</td>
+											<td>  <span class="text-monthly fw-normal">  Monthly </span></td>
+                                            <td><span class="badge badge-appointment text-white ">Appointment</span></td>
+                                        </tr>
+									  </a>
+                                        <tr>
+											<td>Fortis Malar Hospital</td>
+                                            <td>John</td>
+                                            <td>John@gmail.com</td>
+                                            <td>91 98765 43217</td>
+                                            <td>06</td>
+											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
+                                            <td><span class="badge badge-general text-white">General Visit</span></td>
+                                        </tr>
+                                        <tr>
+											<td>Johns Hopkins Hospital</td>
+                                            <td>Kumar</td>
+                                            <td>Kumar@gmail.com</td>
+											<td>91 98765 43217</td>
+                                            <td>22</td>
+											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
+                                            <td><span class="badge badge-Visit text-white">Visit Requested</span></td>
+                                        </tr>
+                                        <tr>
+											<td>Madras Medical Mission</td>
+                                            <td>Madan</td>
+                                            <td>Madan@gmail.com</td>
+											<td>91 98765 43217</td>
+											<td>20</td>
+											<td>  <span class="text-monthly fw-normal">  Monthly </span></td>
+                                            <td><span class="badge badge-appointment text-white">Appointment</span></td>
+                                        </tr>
+                                       
+                                        <tr>
+											<td>Great Ormond Street Hospital</td>
+                                            <td>Santhosh</td>
+                                            <td>Santhosh@gmail.com</td>
+											<td>91 98765 43217</td>
+											<td>06</td>
+											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
+                                            <td><span class="badge badge-general text-white">General visit</span></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar-overlay" data-reff=""></div>
+	<script src="../assets/js/jquery-3.7.1.min.js"></script>
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+	<script src="../assets/js/jquery.slimscroll.js"></script>
+	<script src="../assets/js/app.js"></script>
+</body>
+</html>
+

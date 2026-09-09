@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+    <title>Cotons ai</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	
+	<!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+	
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/select2.min.css">
+	
+	<!-- Datatables CSS -->
+	
+	<!-- Datetimepicker CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-datetimepicker.min.css">
+	
+	<!-- Select2 CSS -->
+    <link rel="stylesheet" href="../assets/css/feather.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/new-css.css">
+
+    
+     
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="header">
+			<div class="header-left">
+				<a href="../home.html" class="logo">
+						<img src="../assets/img/logo.svg" width="35" height="35" alt=""> <span><img src="../assets/img/text.svg" width="120" height="30" alt=""></span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><img src="../assets/img/icons/bar-icon.svg" alt=""></a>
+			<a id="mobile_btn" class="mobile_btn float-start" href="#sidebar"><img src="../assets/img/icons/bar-icon.svg" alt=""></a>
+			<div class="top-nav-search mob-view">
+			
+			</div>
+			<ul class="nav user-menu float-end">
+				<li class="nav-item dropdown has-arrow user-profile-list">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
+						<div class="user-names">
+                        	<span>Welcome</span> 
+					
+							<h5> Mr.Saravanan </h5>
+						</div>
+						<span class="user-img">
+							<img src="../assets/img/user-06.jpg" alt="Admin">
+						</span>
+                    </a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-01.svg" alt=""></span> <span> Settings </span> </a>
+					<a class="dropdown-item" href="../index.html"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-02.svg" alt=""></span> <span> Logout </span> </a>
+               </div>
+                </li>
+				
+            </ul>
+			<div class="dropdown mobile-user-menu float-end">
+				<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
+						class="fa-solid fa-ellipsis-vertical"></i></a>
+				<div class="dropdown-menu dropdown-menu-end">
+					
+					<a class="dropdown-item">Settings</a>
+					<a class="dropdown-item" href="../index.html">Logout</a>
+				</div>
+			</div>
+           
+        </div>
+        
+		
+		<div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Menus</li>
+                            <li class="submenu">
+                                <a href="../home.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-17.svg"
+                                    alt=""></span> <span> Leads </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../leads/new-lead.html">New Lead</a></li>
+                                    <li><a href="../leads/visit-table.html">Visits</a></li>
+                                    <li><a href="../leads/demo.html">Demo</a></li>
+                                    <li><a href="../leads/trial.html">Trial</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../active-leads/active-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" 
+                                    alt=""></span> <span>Active Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../cold-leads/cold-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-18.svg" 
+                                    alt=""></span> <span>Cold Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../subscription/subscription.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-09.svg" 
+                                    alt=""></span> <span>Subscription</span></a>
+                            </li>
+                          <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg"
+                                    alt=""></span> <span> Support </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../support/device.html"> Device </a></li>
+                                    <li><a href="../support/software.html"> Software </a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-15.svg"
+                                    alt=""></span> <span> Inventory </span> <span class="menu-arrow"></span></a>
+				<ul style="display: none;">
+                                    <li class="submenu">
+								<a href="#"><span> Inward </span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="../inventory/return-device.html">Return Devices</a></li>
+                                        <li><a href="../inventory/import.html">Import</a></li>
+										<li><a href="../inventory/refurbish.html">Refurbish</a></li>
+										
+                                    </ul>
+                            </li>
+							<li class="submenu">
+								<a href="#"><span> Outward </span> <span class="menu-arrow"></span></a>
+									<ul style="display: none;">
+										<li><a href="../inventory/outward-trial.html">Trial</a></li>
+										<li><a href="../inventory/outward-subscription.html">Subscription</a></li>
+										<li><a href="../inventory/decommission.html">Decommission</a></li>
+									</ul>
+							</li>
+							
+							<li><a href="../inventory/stock.html">Stock</a></li>
+				</ul>
+					</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+		<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="breadcrumb">
+
+								<li class="breadcrumb-item"><a href="../subscription/subscription.html" class="text-secondary"> Subscription</a></li>
+								<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+								<li class="breadcrumb-item"><a href="../subscription/add-subscription.html ">Device Details</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+           
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card invoices-add-card">
+                            <div class="card-body section-space-xsm-bottom">
+
+                                <form action="#" class="invoices-form">
+                                    <div class="invoices-main-form">
+                      
+							<div class="row mt-4">
+
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Hospital Name </label>
+										<input class="form-control" type="text" value="Mayo Clinic" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>City Name </label>
+										<input class="form-control" type="text" value="Chennai" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Pincode</label>
+										<input class="form-control" type="text" value="256752" disabled>
+									</div>
+								</div>
+							</div>
+
+
+                                <!-- /Table -->
+							<div class="mt-4 mb-3">
+								<h6 class="fs-6 fw-semibold">Trail Period</h6> 									
+							</div>
+							
+							
+							
+							<div class="d-flex mb-3">
+							
+								<div class="glass-box col-xl-3">
+									 <p class="fs-6 mb-2">Trail Start</p> 
+									<img src="../assets/img/icons/menu-icon-04.svg"alt=""><span class="fs-7 fw-semibold ms-1">17-08-2024</span>
+								</div>
+								<div class="glass-box col-xl-3">
+									 <p class="fs-6 mb-2">Trail End</p> 
+									<img src="../assets/img/icons/menu-icon-04.svg"alt=""><span class="fs-7 fw-semibold ms-1">17-11-2024</span>
+								</div>
+								
+							</div>
+							
+							<div class="mt-4 mb-3">
+								<h6 class="fs-6 fw-semibold">Device Feedback</h6> 									
+							</div>
+				
+							<div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="card card-table show-entire">
+                                            <div class="card-body">
+
+                                                <!-- /Table Header -->
+                                                <div class="table-responsive text-nowrap">
+                                                    <table class="table table-bordered table">
+                                                        <thead class="table-secondary">
+                                                            <tr>
+                                                                <th>Sno</th>
+                                                                <th>Device ID</th>
+                                                                <th>Physical Condition</th>
+                                                                <th>Functionality</th>
+                                                                <th>Connectivity</th>
+                                                                <th>Sanitation </th>
+																<th style="width: 100px;">Sale</th>
+                                                                <th>Remarks</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>
+                                                                <input type="text" class="form-control"  value="87587" disabled>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Scratches</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type1" id="type1-yes" value="option1">
+                                                                            <label class="form-check-label" for="type1-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type1" id="type1-no" value="option2">
+                                                                            <label class="form-check-label" for="type1-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Dents</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type2" id="type2-yes" value="option1">
+                                                                            <label class="form-check-label" for="type2-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type2" id="type2-no" value="option2">
+                                                                            <label class="form-check-label" for="type2-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Corrosion</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type3" id="type3-yes" value="option1">
+                                                                            <label class="form-check-label" for="type3-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type3" id="type3-no" value="option2">
+                                                                            <label class="form-check-label" for="type3-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Power Status</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type4" id="type4-yes" value="option1">
+                                                                            <label class="form-check-label" for="type4-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type4" id="type4-no" value="option2">
+                                                                            <label class="form-check-label" for="type4-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Button/Control response</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type5" id="type5-yes" value="option1">
+                                                                            <label class="form-check-label" for="type5-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type5" id="type5-no" value="option2">
+                                                                            <label class="form-check-label" for="type5-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Software/Interface</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type6" id="type6-yes" value="option1">
+                                                                            <label class="form-check-label" for="type6-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type6" id="type6-no" value="option2">
+                                                                            <label class="form-check-label" for="type6-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                  
+                                                               
+
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Port Functionality</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type7" id="type7-yes" value="option1">
+                                                                            <label class="form-check-label" for="type7-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type7" id="type7-no" value="option2">
+                                                                            <label class="form-check-label" for="type7-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Wireless Connectivity</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type8" id="type8-yes" value="option1">
+                                                                            <label class="form-check-label" for="type8-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type8" id="type8-no" value="option2">
+                                                                            <label class="form-check-label" for="type8-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Sterilization</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type9" id="type9-yes" value="option1">
+                                                                            <label class="form-check-label" for="type9-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type9" id="type9-no" value="option2">
+                                                                            <label class="form-check-label" for="type9-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </td>
+																
+																<td class="text-center">
+																	<input class="form-check-input" type="Checkbox">
+																</td>
+																
+                                                                <td>
+                                                                    <textarea rows="3" cols="15" class="form-control" placeholder="Enter remarks"></textarea>
+                                                                </td>
+                                                            </tr>
+															
+															<tr>
+                                                                <td>2</td>
+                                                                <td>
+                                                                <input type="text" class="form-control"  value="79541" disabled>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Scratches</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type10" id="type10-yes" value="option1">
+                                                                            <label class="form-check-label" for="type10-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type10" id="type10-no" value="option2">
+                                                                            <label class="form-check-label" for="type10-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Dents</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type11" id="type11-yes" value="option1">
+                                                                            <label class="form-check-label" for="type11-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type11" id="type11-no" value="option2">
+                                                                            <label class="form-check-label" for="type11-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Corrosion</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type12" id="type12-yes" value="option1">
+                                                                            <label class="form-check-label" for="type12-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type12" id="type12-no" value="option2">
+                                                                            <label class="form-check-label" for="type12-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Power Status</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type13" id="type13-yes" value="option1">
+                                                                            <label class="form-check-label" for="type13-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type13" id="type13-no" value="option2">
+                                                                            <label class="form-check-label" for="type13-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Button/Control response</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type14" id="type14-yes" value="option1">
+                                                                            <label class="form-check-label" for="type14-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type14" id="type14-no" value="option2">
+                                                                            <label class="form-check-label" for="type14-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Software/Interface</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type15" id="type15-yes" value="option1">
+                                                                            <label class="form-check-label" for="type15-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type15" id="type15-no" value="option2">
+                                                                            <label class="form-check-label" for="type15-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                  
+                                                               
+
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Port Functionality</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type16" id="type16-yes" value="option1">
+                                                                            <label class="form-check-label" for="type16-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type16" id="type16-no" value="option2">
+                                                                            <label class="form-check-label" for="type16-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Wireless Connectivity</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type17" id="type17-yes" value="option1">
+                                                                            <label class="form-check-label" for="type17-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type17" id="type17-no" value="option2">
+                                                                            <label class="form-check-label" for="type17-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Sterilization</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type18" id="type18-yes" value="option1">
+                                                                            <label class="form-check-label" for="type18-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type18" id="type18-no" value="option2">
+                                                                            <label class="form-check-label" for="type18-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                </td>
+																
+																<td class="text-center">
+																	<input class="form-check-input" type="Checkbox">
+																</td>
+
+                                                                <td>
+                                                                    <textarea rows="3" cols="15" class="form-control" placeholder="Enter remarks"></textarea>
+                                                                </td>
+                                                            </tr>
+															
+															<tr>
+                                                                <td>3</td>
+                                                                <td>
+                                                                <input type="text" class="form-control"  value="79456" disabled>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Scratches</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type19" id="type19-yes" value="option1">
+                                                                            <label class="form-check-label" for="type19-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type19" id="type19-no" value="option2">
+                                                                            <label class="form-check-label" for="type19-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Dents</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type20" id="type20-yes" value="option1">
+                                                                            <label class="form-check-label" for="type20-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type20" id="type20-no" value="option2">
+                                                                            <label class="form-check-label" for="type20-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Corrosion</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type21" id="type21-yes" value="option1">
+                                                                            <label class="form-check-label" for="type21-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type21" id="type21-no" value="option2">
+                                                                            <label class="form-check-label" for="type21-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Power Status</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type22" id="type22-yes" value="option1">
+                                                                            <label class="form-check-label" for="type22-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type22" id="type22-no" value="option2">
+                                                                            <label class="form-check-label" for="type22-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Button/Control response</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type23" id="type23-yes" value="option1">
+                                                                            <label class="form-check-label" for="type23-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type23" id="type23-no" value="option2">
+                                                                            <label class="form-check-label" for="type23-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Software/Interface</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type24" id="type24-yes" value="option1">
+                                                                            <label class="form-check-label" for="type24-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type24" id="type24-no" value="option2">
+                                                                            <label class="form-check-label" for="type24-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                  
+                                                               
+
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Port Functionality</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type25" id="type25-yes" value="option1">
+                                                                            <label class="form-check-label" for="type25-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type25" id="type25-no" value="option2">
+                                                                            <label class="form-check-label" for="type25-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Wireless Connectivity</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type26" id="type26-yes" value="option1">
+                                                                            <label class="form-check-label" for="type26-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type26" id="type26-no" value="option2">
+                                                                            <label class="form-check-label" for="type26-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Sterilization</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type27" id="type27-yes" value="option1">
+                                                                            <label class="form-check-label" for="type27-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type27" id="type27-no" value="option2">
+                                                                            <label class="form-check-label" for="type27-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+																
+																<td class="text-center">
+																	<input class="form-check-input" type="Checkbox">
+																</td>
+
+                                                                <td>
+                                                                    <textarea rows="3" cols="15" class="form-control" placeholder="Enter remarks"></textarea>
+                                                                </td>
+                                                            </tr>
+															
+															<tr>
+                                                                <td>4</td>
+                                                                <td>
+                                                                <input type="text" class="form-control"  value="83847" disabled>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Scratches</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type28" id="type28-yes" value="option1">
+                                                                            <label class="form-check-label" for="type28-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type28" id="type28-no" value="option2">
+                                                                            <label class="form-check-label" for="type28-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Dents</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type29" id="type29-yes" value="option1">
+                                                                            <label class="form-check-label" for="type29-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type29" id="type29-no" value="option2">
+                                                                            <label class="form-check-label" for="type29-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Corrosion</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type30" id="type30-yes" value="option1">
+                                                                            <label class="form-check-label" for="type30-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type30" id="type30-no" value="option2">
+                                                                            <label class="form-check-label" for="type30-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Power Status</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type31" id="type31-yes" value="option1">
+                                                                            <label class="form-check-label" for="type31-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type31" id="type31-no" value="option2">
+                                                                            <label class="form-check-label" for="type31-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Button/Control response</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type32" id="type32-yes" value="option1">
+                                                                            <label class="form-check-label" for="type32-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type32" id="type32-no" value="option2">
+                                                                            <label class="form-check-label" for="type32-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Software/Interface</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type33" id="type33-yes" value="option1">
+                                                                            <label class="form-check-label" for="type33-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type33" id="type33-no" value="option2">
+                                                                            <label class="form-check-label" for="type33-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                  
+                                                               
+
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Port Functionality</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type34" id="type34-yes" value="option1">
+                                                                            <label class="form-check-label" for="type34-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type34" id="type34-no" value="option2">
+                                                                            <label class="form-check-label" for="type34-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Wireless Connectivity</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type35" id="type35-yes" value="option1">
+                                                                            <label class="form-check-label" for="type35-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type35" id="type35-no" value="option2">
+                                                                            <label class="form-check-label" for="type35-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Sterilization</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type36" id="type36-yes" value="option1">
+                                                                            <label class="form-check-label" for="type36-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type36" id="type36-no" value="option2">
+                                                                            <label class="form-check-label" for="type36-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+																
+																<td class="text-center">
+																	<input class="form-check-input" type="Checkbox">
+																</td>
+
+                                                                <td>
+                                                                    <textarea rows="3" cols="15" class="form-control" placeholder="Enter remarks"></textarea>
+                                                                </td>
+                                                            </tr>
+															
+															<tr>
+                                                                <td>5</td>
+                                                                <td>
+                                                                <input type="text" class="form-control"  value="73654" disabled>
+                                                                </td>
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Scratches</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type37" id="type37-yes" value="option1">
+                                                                            <label class="form-check-label" for="type37-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type37" id="type37-no" value="option2">
+                                                                            <label class="form-check-label" for="type37-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Dents</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type38" id="type38-yes" value="option1">
+                                                                            <label class="form-check-label" for="type38-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type38" id="type38-no" value="option2">
+                                                                            <label class="form-check-label" for="type38-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Corrosion</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type39" id="type39-yes" value="option1">
+                                                                            <label class="form-check-label" for="type39-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type39" id="type39-no" value="option2">
+                                                                            <label class="form-check-label" for="type39-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+
+                                                                <td>
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Power Status</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type40" id="type40-yes" value="option1">
+                                                                            <label class="form-check-label" for="type40-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type40" id="type40-no" value="option2">
+                                                                            <label class="form-check-label" for="type40-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Button/Control response</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type41" id="type41-yes" value="option1">
+                                                                            <label class="form-check-label" for="type41-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type41" id="type41-no" value="option2">
+                                                                            <label class="form-check-label" for="type41-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Software/Interface</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type42" id="type42-yes" value="option1">
+                                                                            <label class="form-check-label" for="type42-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type42" id="type42-no" value="option2">
+                                                                            <label class="form-check-label" for="type42-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                  
+                                                               
+
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Port Functionality</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type43" id="type43-yes" value="option1">
+                                                                            <label class="form-check-label" for="type43-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type43" id="type43-no" value="option2">
+                                                                            <label class="form-check-label" for="type43-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Wireless Connectivity</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type44" id="type44-yes" value="option1">
+                                                                            <label class="form-check-label" for="type44-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type44" id="type44-no" value="option2">
+                                                                            <label class="form-check-label" for="type44-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <div>
+                                                                        <label class="display-block mb-2">Sterilization</label>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type45" id="type45-yes" value="option1">
+                                                                            <label class="form-check-label" for="type45-yes">Yes</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="type45" id="type45-no" value="option2">
+                                                                            <label class="form-check-label" for="type45-no">No</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </td>
+																
+																<td class="text-center">
+																	<input class="form-check-input" type="Checkbox">
+																</td>
+
+                                                                <td>
+                                                                    <textarea rows="3" cols="15" class="form-control" placeholder="Enter remarks"></textarea>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                               
+                                  <div class="row">
+                                    <div class="col-12 ">
+									<div class="doctor-submit text-end">
+										<a href="../subscription/subscription-device-allotment.html" class="text-light btn btn-primary submit-form me-2"> Proceed</a>
+									</div>
+								</div>
+                                </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.slimscroll.js"></script>
+    <script src="../assets/js/feather.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="../assets/js/select2.min.js"></script>
+    <!-- bootstrap-datetimepicker -->
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>	
+    

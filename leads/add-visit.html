@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+        <title>Cotons ai</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
+        <!-- Feathericon CSS -->
+        <!-- Datepicker CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="../assets/css/feather.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/new-css.css">
+        <script src="https://kit.fontawesome.com/fe40853e81.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="../home.html" class="logo">
+						<img src="../assets/img/logo.svg" width="35" height="35" alt=""> <span><img src="../assets/img/text.svg" width="120" height="30" alt=""></span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><img src="../assets/img/icons/bar-icon.svg"  alt=""></a>
+            <a id="mobile_btn" class="mobile_btn float-start" href="#sidebar"><img src="../assets/img/icons/bar-icon.svg"  alt=""></a>
+			<div class="top-nav-search mob-view">
+			
+			</div>
+ <ul class="nav user-menu float-end">
+               
+               
+				<li class="nav-item dropdown has-arrow user-profile-list">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
+						<div class="user-names">
+                        	<span>Welcome</span> 
+					
+							<h5> Mr.Saravanan </h5>
+						</div>
+						<span class="user-img">
+							<img  src="../assets/img/user-06.jpg"  alt="Admin">
+						</span>
+                    </a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-01.svg" alt=""></span> <span> Settings </span> </a>
+					<a class="dropdown-item" href="../index.html"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-02.svg" alt=""></span> <span> Logout </span> </a>
+               </div>
+                </li>
+				
+            </ul>
+			<div class="dropdown mobile-user-menu float-end">
+				<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
+						class="fa-solid fa-ellipsis-vertical"></i></a>
+				<div class="dropdown-menu dropdown-menu-end">
+					
+					<a class="dropdown-item">Settings</a>
+					<a class="dropdown-item" href="../index.html">Logout</a>
+				</div>
+			</div>
+           
+        </div>
+        <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Menus</li>
+                            <li class="submenu">
+                                <a href="../home.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-17.svg"
+                                    alt=""></span> <span> Leads </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../leads/new-lead.html">New Lead</a></li>
+                                    <li><a href="../leads/visit-table.html">Visits</a></li>
+                                    <li><a href="../leads/demo.html">Demo</a></li>
+                                    <li><a href="../leads/trial.html">Trial</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../active-leads/active-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" 
+                                    alt=""></span> <span>Active Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../cold-leads/cold-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-18.svg" 
+                                    alt=""></span> <span>Cold Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../subscription/subscription.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-09.svg" 
+                                    alt=""></span> <span>Subscription</span></a>
+                            </li>
+                          <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg"
+                                    alt=""></span> <span> Support </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../support/device.html"> Device </a></li>
+                                    <li><a href="../support/software.html"> Software </a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-15.svg"
+                                    alt=""></span> <span> Inventory </span> <span class="menu-arrow"></span></a>
+				<ul style="display: none;">
+                                    <li class="submenu">
+								<a href="#"><span> Inward </span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="../inventory/return-device.html">Return Devices</a></li>
+                                        <li><a href="../inventory/import.html">Import</a></li>
+										<li><a href="../inventory/refurbish.html">Refurbish</a></li>
+										
+                                    </ul>
+                            </li>
+							<li class="submenu">
+								<a href="#"><span> Outward </span> <span class="menu-arrow"></span></a>
+									<ul style="display: none;">
+										<li><a href="../inventory/outward-trial.html">Trial</a></li>
+										<li><a href="../inventory/outward-subscription.html">Subscription</a></li>
+										<li><a href="../inventory/decommission.html">Decommission</a></li>
+									</ul>
+							</li>
+							
+							<li><a href="../inventory/stock.html">Stock</a></li>
+				</ul>
+					</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+		 <div class="page-wrapper">
+            <div class="content pb-4">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="../home.html" class="text-secondary"> Leads </a></li>
+								<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+								<li class="breadcrumb-item"><a href="../leads/visit-table.html" class="text-secondary">Visits</a></li>
+								<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+								<li class="breadcrumb-item"><a href="../leads/add-visit.html">Create Visit</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Header -->
+				<div class="card">
+					<div class="card-body section-space-xsm-bottom">
+						<div class="mt-2 mb-4">
+							<h6 class="fs-6 fw-semibold">Create Visit</h6> 									
+						</div>
+						
+							<div class="row mt-2">
+
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Hospital Name </label>
+										<input class="form-control" type="text" value="Mayo Clinic" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>City Name </label>
+										<input class="form-control" type="text" value="Chennai" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Pincode</label>
+										<input class="form-control" type="text" value="256752" disabled>
+									</div>
+								</div>
+							</div>
+						
+				<!-- General-detail -->
+						<div class="mb-4 mt-4">
+							<h6 class="fs-6 fw-semibold">General Details<span class="text-danger">*</span></h6> 									
+						</div>
+				<!-- 1st row -->
+						<div class="row">
+							<div class="col-md-3 mb-3">
+								<label for="validationServer01-1" class="fs-7">Name <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationServer01-1" placeholder="Enter Hospital Name" value="Mayo Clinic">
+									<div class="invalid-feedback">
+									Please provide a name.
+									</div>
+							</div>
+							
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Email<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationCustom03-1" placeholder="Enter your Email" >
+									<div class="invalid-feedback">
+										Please provide a Email.
+									</div>
+							</div>	
+							
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Contact<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationCustom03-2" placeholder="Enter Hospital Contact" value="7814253524">
+									<div class="invalid-feedback">
+										Please provide a Email.
+									</div>
+							</div>
+							
+							<div class="col-md-3 mb-3">
+								<label for="pincode" class="fs-7">Pincode<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="pincode" placeholder="Enter your Pincode" value="600001">
+									<div class="invalid-feedback">
+										Please provide a Pincode.
+									</div>
+							</div>
+							
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom02" class="fs-7">GST Number<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationCustom04-2" placeholder="Enter your GST Number">
+									<div class="invalid-feedback">
+										Please provide a Pincode.
+									</div>
+							</div>
+							
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Select your city<span class="text-danger">*</span></label>
+										<select class="form-select custom-box">
+	<option value>Select your City</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Madurai">Madurai</option>
+    <option value="Tiruchirappalli">Tiruchirappalli</option>
+    <option value="Salem">Salem</option>
+    <option selected="Erode">Erode</option>
+    <option value="Tirunelveli">Tirunelveli</option>
+    <option value="Vellore">Vellore</option>
+    <option value="Thoothukudi">Thoothukudi</option>
+    <option value="Dindigul">Dindigul</option>
+    <option value="Thanjavur">Thanjavur</option>
+    <option value="Cuddalore">Cuddalore</option>
+    <option value="Nagercoil">Nagercoil</option>
+    <option value="Kanchipuram">Kanchipuram</option>
+    <option value="Karur">Karur</option>
+    <option value="Tiruppur">Tiruppur</option>
+    <option value="Udhagamandalam">Udhagamandalam (Ooty)</option>
+    <option value="Sivakasi">Sivakasi</option>
+    <option value="Pudukkottai">Pudukkottai</option>
+    <option value="Nagapattinam">Nagapattinam</option>
+    <option value="Namakkal">Namakkal</option>
+    <option value="Villupuram">Villupuram</option>
+    <option value="Perambalur">Perambalur</option>
+    <option value="Ariyalur">Ariyalur</option>
+    <option value="Ramanathapuram">Ramanathapuram</option>
+    <option value="Krishnagiri">Krishnagiri</option>
+    <option value="Tenkasi">Tenkasi</option>
+    <option value="Virudhunagar">Virudhunagar</option>
+    <option value="Thiruvarur">Thiruvarur</option>
+								</select>
+							</div>
+							
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">State<span class="text-danger">*</span></label>
+									<select class="form-select custom-box">
+    <option selected>Select your state</option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CG">Chhattisgarh</option>
+    <option value="GA">Goa</option>
+    <option value="GJ">Gujarat</option>
+    <option value="HR">Haryana</option>
+    <option value="HP">Himachal Pradesh</option>
+    <option value="JH">Jharkhand</option>
+    <option value="KA">Karnataka</option>
+    <option value="KL">Kerala</option>
+    <option value="MP">Madhya Pradesh</option>
+    <option value="MH">Maharashtra</option>
+    <option value="MN">Manipur</option>
+    <option value="ML">Meghalaya</option>
+    <option value="MZ">Mizoram</option>
+    <option value="NL">Nagaland</option>
+    <option value="OR">Odisha</option>
+    <option value="PB">Punjab</option>
+    <option value="RJ">Rajasthan</option>
+    <option value="SK">Sikkim</option>
+    <option value="TN">Tamil Nadu</option>
+    <option value="TS">Telangana</option>
+    <option value="TR">Tripura</option>
+    <option value="UP">Uttar Pradesh</option>
+    <option value="UK">Uttarakhand</option>
+    <option value="WB">West Bengal</option>
+    <option value="AN">Andaman and Nicobar Islands</option>
+    <option value="CH">Chandigarh</option>
+    <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+    <option value="LD">Lakshadweep</option>
+    <option value="DL">Delhi</option>
+    <option value="JK">Jammu and Kashmir</option>
+    <option value="LA">Ladakh</option>
+    <option value="PY">Puducherry</option>
+									</select>
+							</div>
+							
+							
+							
+							</div>
+						
+						<div class="col-12">
+								<label for="validationServer02" class="fs-7">Address<span class="text-danger">*</span></label>
+								<textarea class="form-control form-control" rows="3" type="text" aria-label=".form-control-lg example" style="height:100px"> 12, Gandhi Street, Thindal, Erode - 638012, Tamil Nadu. </textarea>
+									<div class="invalid-feedback">
+                                        Please provide address.
+									</div>
+							</div>
+						
+							 
+						
+					<!-- Primary Contact -->
+						<div class="mt-4 mb-4">
+							<h6 class="fs-6 fw-semibold">Primary Contact<span class="text-danger">*</span></h6> 									
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3 mb-3">
+								<label for="validationServer01-2" class="fs-7">Name <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationServer01-2" placeholder="Enter your Name">
+								<div class="invalid-feedback">
+									Please provide a name.
+								</div>
+							</div>
+
+							<div class="col-md-3 mb-3">
+								<label for="validationServer02" class="fs-7">Designation<span class="text-danger">*</span></label>
+								<input rows="1" cols="1" class="form-control" id="validationServer02-1" placeholder="Enter your Designation">
+									<div class="invalid-feedback">
+										Please provide designation.
+                                    </div>
+							</div>
+								
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Contact<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationCustom03-3" placeholder="Enter Contact Number">
+                                    <div class="invalid-feedback">
+                                        Please provide a contact.
+                                    </div>
+							</div>
+								
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Email<span class="text-danger">*</span></label>
+								<input type="text" class="form-control" id="validationCustom03-4" placeholder="Enter your Email">
+                                    <div class="invalid-feedback">
+                                        Please provide a Email.
+                                    </div>
+							</div>
+						</div>
+						
+				<!-- Optional -->
+						<div class="mt-4 mb-4">
+							<h6 class="fs-6 fw-semibold">Owner <small>(Optional)</small></h6> 									
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3 mb-3">
+								<label for="validationServer01-3" class="fs-7">Name</label>
+								<input type="text" class="form-control" id="validationServer01-3" placeholder="Enter your Name">
+								<div class="invalid-feedback">
+									Please provide a name.
+								</div>
+							</div>
+
+							<div class="col-md-3 mb-3">
+								<label for="validationServer02" class="fs-7">Designation</label>
+								<input rows="1" cols="1" class="form-control" id="validationServer02-2" placeholder="Enter your Designation">
+									<div class="invalid-feedback">
+										Please provide designation.
+                                    </div>
+							</div>
+								
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Contact</label>
+								<input type="text" class="form-control" id="validationCustom03-5" placeholder="Enter Contact Number">
+                                    <div class="invalid-feedback">
+                                        Please provide a contact.
+                                    </div>
+							</div>
+								
+							<div class="col-md-3 mb-3">
+								<label for="validationCustom03" class="fs-7">Email</label>
+								<input type="text" class="form-control" id="validationCustom03-6" placeholder="Enter your Email">
+                                    <div class="invalid-feedback">
+                                        Please provide a Email.
+                                    </div>
+							</div>
+						</div>
+				<!-- Checkbox -->
+						<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label label-size" for="flexCheckDefault">
+									Same as Primary Contact Details
+								</label>
+						</div>
+						
+				<!-- Category -->
+						<div class="mt-5 mb-4">
+							<h6 class="fs-6 fw-semibold">Category<span class="text-danger">*</span></h6> 									
+						</div>
+						
+						<div class="form-group">
+							<div class="d-flex flex-wrap column">
+								<div class="form-space form-check">
+									<input class="form-check-input" type="radio" name="clinicType" id="microClinic" value="Micro Clinic">
+									<label class="form-check-label" for="microClinic">Micro Clinic</label>
+								</div>
+								
+								<div class="form-space form-check">
+									<input class="form-check-input" type="radio" name="clinicType" id="smallClinic" value="Small Clinic">
+									<label class="form-check-label" for="smallClinic">Small Clinic</label>
+								</div>
+								
+								<div class="form-space form-check">
+									<input class="form-check-input" type="radio" name="clinicType" id="mediumHospital" value="Medium Hospital">
+									<label class="form-check-label" for="mediumHospital">Medium Hospital</label>
+								</div>
+								
+								<div class="form-space form-check">
+									<input class="form-check-input" type="radio" name="clinicType" id="multispecialtyHospital" value="Multispecialty Hospital">
+									<label class="form-check-label" for="multispecialtyHospital">Multispecialty Hospital</label>
+								</div>
+							</div>
+						</div>
+					
+							
+						
+				<!-- Micro-clinic -->
+				
+				<div id="microClinicQuestions" class="clinic-questions" style="display: none;">
+						<div class="mt-5 mb-4">
+							<h6 class="fs-6 fw-semibold">Micro Clinic</h6> 									
+						</div>
+						
+						<div class="row">
+                                <div class="col-md-12 col-lg-6 mb-6">
+									<h5 class="modal-title pb-2 fs-7 fw-lighter">1. Do you have an in-house pharmacy?</h5>
+								
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-1" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-1">Yes</label>
+									
+										<input type="radio" id="visitq-2" name="customRadio1" class="form-check-input ps-3">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-2">No</label>
+									</div>
+								
+                                </div>
+								
+
+                                <div class="col-md-12 col-lg-6 mb-6">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter pt-md-5 pt-lg-0 pt-sm-5 mobile-spacing">2. Do you have qualified assistants in your clinic?</h5>	
+								   <div> 
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="customRadi01" name="customRadi2" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="customRadi01">Yes</label>
+										<input type="radio" id="customRadi02" name="customRadi2" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="customRadi02">No</label>
+									</div>
+									</div>
+                                </div>
+								
+                           
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">3. Do you perform minor surgeries at your clinic?</h5>
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-3" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-3">Yes</label>
+										<input type="radio" id="visitq-4" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-4">No</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">4. Do you use any software for your daily operations? </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-5" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-5">Yes</label>
+										<input type="radio" id="visitq-6" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-6">No</label>
+									</div>
+                                </div>
+							
+							
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">5. Do you have visiting doctors that come to your clinic?</h5>	
+								<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-7" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-7">Yes</label>
+										<input type="radio" id="visitq-8" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-8">No</label>
+								</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">6. Do you refer your patients to other specialists? </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-9" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-9">Yes</label>
+										<input type="radio" id="visitq-10" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-10">No</label>
+									</div>
+                                </div>
+								
+
+								<div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">7. Do you provide any home consultations?</h5>	
+								 <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-11" name="customRadio7" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-11">Yes</label>
+										<input type="radio" id="visitq-12" name="customRadio7" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-12">No</label>
+								</div>
+                                </div>
+								
+								<div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">8. Do you provide telemedicine services for your clients? </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-13" name="customRadio8" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-13">Yes</label>
+										<input type="radio" id="visitq-14" name="customRadio8" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-14">No</label>
+									</div>
+                                </div>
+								
+								<div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">9. What are the operating hours for your clinic?</h5>	
+									<div class="row">
+                               
+										<div class="col-6 col-md-3 col-lg-6 col-xl-4">
+											<label class="fs-7">From <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control timepicker" id="timepicker-3-1">
+											</div>
+										</div>
+										
+										<div class="col-6 col-md-3 col-lg-6 col-xl-4">
+											<label class="fs-7">To <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control timepicker" id="timepicker-4-2">
+											</div>
+										</div>
+                               
+									</div>
+								</div>
+
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">10. Which lab do you suggest for your diagnostic tests? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-3" placeholder="Enter the preferred lab name">
+                               </div>
+							   </div>
+                        </div> <!-- row -->
+					<!-- action -->
+							<div class="col-12 pt-4">
+								<div class="doctor-submit text-end">
+									<button type="button" class="btn btn-primary bg-grey me-1 cancel-form">Cancel</button>
+									<button type="submit" class="btn btn-primary submit-form">Submit</button>
+								</div>
+							</div> 	
+							
+						
+				</div><!-- end of question -->
+				
+				<!-- small clinic -->
+				<div id="smallClinicQuestions" class="clinic-questions" style="display: none;">
+						<div class="mt-5 mb-4">
+							<h6 class="fs-6 fw-semibold">Small Clinic</h6> 									
+						</div>
+				<div class="row">
+                                <div class="col-md-12 col-lg-6 mb-6">
+									<h5 class="modal-title pb-2 fs-7 fw-lighter">1. Do you have an in-house pharmacy?</h5>
+								
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-15" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-15">Yes</label>
+									
+										<input type="radio" id="visitq-16" name="customRadio1" class="form-check-input ps-3">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-16">No</label>
+									</div>
+								
+                                </div>
+								
+
+                                <div class="col-md-12 col-lg-6 mb-6">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter pt-md-5 pt-lg-0 pt-sm-5 mobile-spacing">2. Do you have qualified assistants in your clinic?</h5>	
+								   <div> 
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-17" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-17">Yes</label>
+										<input type="radio" id="visitq-18" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-18">No</label>
+									</div>
+									</div>
+                                </div>
+								
+                           
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">3. Do you use any software for your daily operations?</h5>
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-19" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-19">Yes</label>
+										<input type="radio" id="visitq-20" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-20">No</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">4. Do you have visiting doctors that come to your clinic? </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-21" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-21">Yes</label>
+										<input type="radio" id="visitq-22" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-22">No</label>
+									</div>
+                                </div>
+							
+							
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">5. Do you refer your patients to other specialists?</h5>	
+								<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-23" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-23">Yes</label>
+										<input type="radio" id="visitq-24" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-24">No</label>
+								</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">6. Do you provide any home consultations?</h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-25" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-25">Yes</label>
+										<input type="radio" id="visitq-26" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-26">No</label>
+									</div>
+                                </div>
+								
+								<div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">7. Do you provide telemedicine services for your clients?</h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-27" name="customRadio7" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-27">Yes</label>
+										<input type="radio" id="visitq-28" name="customRadio7" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-28">No</label>
+									</div>
+                                </div>
+								
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">8. What kind of surgery do you perform at your clinic? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-4" placeholder="Types of surgeries performed">
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">9. Which lab do you suggest for your diagnostic tests? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-5" placeholder="Enter the preferred lab name">
+                               </div>
+							   </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">10. What are the operating hours for your clinic?</h5>	
+									<div class="row">
+                               
+										<div class="col-6 col-md-3 col-lg-6 col-xl-4">
+											<label class="fs-7">From <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control timepicker" id="timepicker-3-3">
+											</div>
+										</div>
+										
+										<div class="col-6 col-md-3 col-lg-6 col-xl-4">
+											<label class="fs-7">To <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control timepicker" id="timepicker-4-4">
+											</div>
+										</div>
+                               
+									</div>
+								</div>
+								
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">11. Do you provide other value-added services for your clients?  </h5>	
+												<div class="col-md-8 mb-6">
+													<select class="form-select custom-box">
+														<option value="">Select the Category</option>
+														<option value="1">Pet Wellness Plans</option>
+														<option value="2">Online Appointment Booking</option>
+														<option value="3">Extended Hours and Emergency Care</option>
+														<option value="4">Home Visits</option>
+														<option value="5">Pet Grooming and Spa Services</option>
+														<option value="6">Pet Boarding and Daycare</option>
+														<option value="7">Nutritional Counseling </option>
+														<option value="8">Telemedicine and Remote Consultations </option>
+														<option value="9">Behavioural Consultations </option>
+														<option value="10">Client Education Workshops </option>
+														<option value="11">Health Monitoring Apps </option>
+														<option value="12">Senior Pet Care Programs </option>
+														<option value="13">Pet Insurance Assistance </option>
+														<option value="14">Community Events and Outreach </option>
+														<option value="15">Pet Microchipping </option>
+														<option value="16">Pet Travel Certificates and Documentation </option>
+														<option value="17">Alternative Therapies </option>
+														<option value="18">Pet Loss Support Services </option>
+													</select>
+												</div>
+								</div>
+                            </div> <!-- row -->
+						<!-- action -->
+							<div class="col-12 pt-4">
+								<div class="doctor-submit text-end">
+									<button type="button" class="btn btn-primary bg-grey me-1 cancel-form">Cancel</button>
+									<button type="submit" class="btn btn-primary submit-form">Submit</button>
+								</div>
+							</div> 	
+						</div><!-- End of question -->
+				
+				
+					<!-- medium hospital -->
+					<div id="mediumHospitalQuestions" class="clinic-questions" style="display: none;">
+							
+						<div class="mt-5 mb-4">
+							<h6 class="fs-6 fw-semibold">Medium Hospital</h6> 									
+						</div>
+						
+						<div class="row">
+
+                                <div class="col-md-12 col-lg-6 mb-6">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">1. Do you have qualified assistants in your clinic?</h5>	
+								   <div> 
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-29" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-29">Yes</label>
+										<input type="radio" id="visitq-30" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-30">No</label>
+									</div>
+									</div>
+                                </div>
+								
+                           
+                                <div class="col-md-12 col-lg-6 mb-6">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter pt-md-5 pt-lg-0 pt-sm-5 mobile-spacing">2. Do you use any software for your daily operations?</h5>
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-31" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-31">Yes</label>
+										<input type="radio" id="visitq-32" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-32">No</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">3. Do you have 24*7 care services? </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-33" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-33">Yes</label>
+										<input type="radio" id="visitq-34" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-34">No</label>
+									</div>
+                                </div>
+							
+							
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">4. Do you provide any home consultations?</h5>	
+								<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-35" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-35">Yes</label>
+										<input type="radio" id="visitq-36" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-36">No</label>
+								</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">5. Do you provide telemedicine services for your clients?</h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-37" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-37">Yes</label>
+										<input type="radio" id="visitq-38" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-38">No</label>
+									</div>
+                                </div>
+								
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">6. Do you have other branches? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-6" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">7. What kind of surgery do you perform at your Hospital? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-7" placeholder="Types of surgeries performed" >
+                               </div>
+							   </div>
+								
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+									<h5 class="modal-title pb-2 fs-7 fw-lighter">8. How many operation theatres do you have? </h5>	
+									<div class="col-md-8 mb-6">
+										<input rows="1" cols="1" class="form-control" id="validationServer02-8" placeholder="Enter the Number" >
+									</div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">9. How many consultation rooms do you have?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-9" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">10. How many surgeries do you perform on an average in a week?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-10" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+								
+                            
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter" style="width:70%">11. How many surgeries performed require inpatient care?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-11" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">12. What is the average duration for inpatient care at the hospital?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-12" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							
+							
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">13. How many qualified assistants are available for post-operative care?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-13" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							    <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">14. What are the operating hours for your clinic?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-14" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">15. What diagnostic services do you provide at your hospital?</h5>	
+												<div class="col-md-8 mb-6">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Radiography (X-rays)</option>
+														<option value="2">Ultrasound </option>
+														<option value="3">Computed Tomography (CT) </option>
+														<option value="4">Magnetic Resonance Imaging (MRI) </option>
+														<option value="5">Endoscopy </option>
+														<option value="6">Laboratory Testing (blood tests, biochemistry panels, etc.) </option>
+														<option value="7">Cytology and Histopathology</option>
+														<option value="8">Electrocardiography (ECG)</option>
+														<option value="9">Blood Pressure Monitoring</option>
+														<option value="10">Allergy Testing</option>
+														<option value="11">Genetic Testing</option>
+														<option value="12">Arthroscopy </option>
+														<option value="13">Bronchoscopy</option>
+														<option value="14">Laparoscopy</option>
+														<option value="15">Echocardiography </option>
+														<option value="16">Nuclear Scintigraphy</option>
+														<option value="17">Ophthalmic Examinations</option>
+														<option value="18">Electromyography (EMG) and Nerve Conduction Studies</option>
+														<option value="19">Videofluoroscopy</option>
+														<option value="20">Gastrointestinal Motility Studies</option>
+													</select>
+												</div>
+									</div>
+							   
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">16. Do you provide other value-added services for your clients?  </h5>	
+												<div class="col-md-8 mb-6">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Pet Wellness Plans</option>
+														<option value="2">Online Appointment Booking</option>
+														<option value="3">Extended Hours and Emergency Care</option>
+														<option value="4">Home Visits</option>
+														<option value="5">Pet Grooming and Spa Services</option>
+														<option value="6">Pet Boarding and Daycare</option>
+														<option value="7">Nutritional Counseling </option>
+														<option value="8">Telemedicine and Remote Consultations </option>
+														<option value="9">Behavioural Consultations </option>
+														<option value="10">Client Education Workshops </option>
+														<option value="11">Health Monitoring Apps </option>
+														<option value="12">Senior Pet Care Programs </option>
+														<option value="13">Pet Insurance Assistance </option>
+														<option value="14">Community Events and Outreach </option>
+														<option value="15">Pet Microchipping </option>
+														<option value="16">Pet Travel Certificates and Documentation </option>
+														<option value="17">Alternative Therapies </option>
+														<option value="18">Pet Loss Support Services </option>
+													</select>
+												</div>
+									</div>
+									
+									<div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">17. What kind of specialists are in-house at your hospital? </h5>	
+												<div class="col-md-8 mb-6 pt-1">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Cardiologist </option>
+														<option value="2">Ophthalmologist </option>
+														<option value="3">Orthopedist </option>
+														<option value="4">Oncologist </option>
+														<option value="5">Gynaecologist </option>
+														<option value="6">Dermatologist </option>
+														<option value="7">Dentist</option>
+														<option value="8">Nephrologist </option>
+														<option value="9">Internal medicine</option>
+														<option value="10">Nutritionist</option>
+													</select>
+												</div>
+								</div>
+								
+                            </div> <!-- row -->
+						
+						<!-- action -->
+							<div class="col-12 pt-4">
+								<div class="doctor-submit text-end">
+									<button type="button" class="btn btn-primary bg-grey me-1 cancel-form">Cancel</button>
+									<button type="submit" class="btn btn-primary submit-form">Submit</button>
+								</div>
+							</div> 	
+					</div><!-- end of question -->
+					
+					<!-- multispeciality-->
+					<div id="multispecialtyHospitalQuestions" class="clinic-questions" style="display: none;">
+					
+						<div class="mt-5 mb-4">
+							<h6 class="fs-6 fw-semibold">Multispeciality Hospital</h6> 									
+						</div>
+						
+						<div class="row">
+							   
+                                <div class="col-md-12 col-lg-6 mb-6">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">1. How many branches do you have within the city? </h5>	
+								   <div> 
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-39" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-39">Yes</label>
+										<input type="radio" id="visitq-40" name="customRadio1" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-40">No</label>
+									</div>
+									</div>
+                                </div>
+								
+                           
+                                <div class="col-md-12 col-lg-6 mb-6">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter pt-md-5 pt-lg-0 pt-sm-5 mobile-spacing">2. Do you have other branches across the country? </h5>
+									<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-41" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-41">Yes</label>
+										<input type="radio" id="visitq-42" name="customRadio2" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-42">No</label>
+									</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">3. Do you have qualified assistants in your clinic?  </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-43" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-43">Yes</label>
+										<input type="radio" id="visitq-44" name="customRadio3" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-44">No</label>
+									</div>
+                                </div>
+								
+								<div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">4. Do you use any software for your daily operations?  </h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-45" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-45">Yes</label>
+										<input type="radio" id="visitq-46" name="customRadio4" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-46">No</label>
+									</div>
+                                </div>
+							
+							
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">5. Do you provide any home consultations?</h5>	
+								<div class="d-flex align-items-center">
+										<input type="radio" id="visitq-47" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-47">Yes</label>
+										<input type="radio" id="visitq-48" name="customRadio5" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-48">No</label>
+								</div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 mb-6 pt-5">
+                                   <h5 class="modal-title pb-2 fs-7 fw-lighter">6. Do you provide telemedicine services for your clients?</h5>	
+								   <div class="d-flex align-items-center">
+										<input type="radio" id="visitq-49" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding pe-4 ps-2 fs-7 fw-lighter" for="visitq-49">Yes</label>
+										<input type="radio" id="visitq-50" name="customRadio6" class="form-check-input">
+											<label class="form-check-label custom-padding ps-2 fs-7 fw-lighter" for="visitq-50">No</label>
+									</div>
+                                </div>
+								
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">7. Do you have other branches? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-15" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">8. What kind of surgery do you perform at your Hospital? </h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-16" placeholder="Types of surgeries performed" >
+                               </div>
+							   </div>
+								
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+									<h5 class="modal-title pb-2 fs-7 fw-lighter">9. How many operation theatres do you have? </h5>	
+									<div class="col-md-8 mb-6">
+										<input rows="1" cols="1" class="form-control" id="validationServer02-17" placeholder="Enter the Number" >
+									</div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">10. How many consultation rooms do you have?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-18" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">11. How many surgeries do you perform on an average in a week?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-19" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+								
+                            
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter" style="width:70%">12. How many surgeries performed require inpatient care?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-20" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+
+                                <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">13. What is the average duration for inpatient care at the hospital?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-21" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							
+							
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">14. How many qualified assistants are available for post-operative care?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-22" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							    <div class="col-md-8 col-lg-6 mb-6 pt-5">
+								<h5 class="modal-title pb-2 fs-7 fw-lighter">15. What are the operating hours for your clinic?</h5>	
+                                  <div class="col-md-8 mb-6">
+								   <input rows="1" cols="1" class="form-control" id="validationServer02-23" placeholder="Enter the Number" >
+                               </div>
+							   </div>
+							   
+							   <div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">16. What diagnostic services do you provide at your hospital?</h5>	
+												<div class="col-md-8 mb-6">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Radiography (X-rays)</option>
+														<option value="2">Ultrasound </option>
+														<option value="3">Computed Tomography (CT) </option>
+														<option value="4">Magnetic Resonance Imaging (MRI) </option>
+														<option value="5">Endoscopy </option>
+														<option value="6">Laboratory Testing (blood tests, biochemistry panels, etc.) </option>
+														<option value="7">Cytology and Histopathology</option>
+														<option value="8">Electrocardiography (ECG)</option>
+														<option value="9">Blood Pressure Monitoring</option>
+														<option value="10">Allergy Testing</option>
+														<option value="11">Genetic Testing</option>
+														<option value="12">Arthroscopy </option>
+														<option value="13">Bronchoscopy</option>
+														<option value="14">Laparoscopy</option>
+														<option value="15">Echocardiography </option>
+														<option value="16">Nuclear Scintigraphy</option>
+														<option value="17">Ophthalmic Examinations</option>
+														<option value="18">Electromyography (EMG) and Nerve Conduction Studies</option>
+														<option value="19">Videofluoroscopy</option>
+														<option value="20">Gastrointestinal Motility Studies</option>
+													</select>
+												</div>
+									</div>
+							   
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">17. Do you provide other value-added services for your clients? </h5>	
+												<div class="col-md-8 mb-6 pt-2">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Pet Wellness Plans</option>
+														<option value="2">Online Appointment Booking</option>
+														<option value="3">Extended Hours and Emergency Care</option>
+														<option value="4">Home Visits</option>
+														<option value="5">Pet Grooming and Spa Services</option>
+														<option value="6">Pet Boarding and Daycare</option>
+														<option value="7">Nutritional Counseling </option>
+														<option value="8">Telemedicine and Remote Consultations </option>
+														<option value="9">Behavioural Consultations </option>
+														<option value="10">Client Education Workshops </option>
+														<option value="11">Health Monitoring Apps </option>
+														<option value="12">Senior Pet Care Programs </option>
+														<option value="13">Pet Insurance Assistance </option>
+														<option value="14">Community Events and Outreach </option>
+														<option value="15">Pet Microchipping </option>
+														<option value="16">Pet Travel Certificates and Documentation </option>
+														<option value="17">Alternative Therapies </option>
+														<option value="18">Pet Loss Support Services </option>
+													</select>
+												</div>
+									</div>
+									
+								<div class="col-md-8 col-lg-6 mb-6 pt-5">
+										 <h5 class="modal-title pb-2 fs-7 fw-lighter">18. What kind of specialists are in-house at your hospital? </h5>	
+												<div class="col-md-8 mb-6 pt-1">
+													<select class="form-select custom-box" >
+														<option value="">Select the Category</option>
+														<option value="1">Cardiologist </option>
+														<option value="2">Ophthalmologist </option>
+														<option value="3">Orthopedist </option>
+														<option value="4">Oncologist </option>
+														<option value="5">Gynaecologist </option>
+														<option value="6">Dermatologist </option>
+														<option value="7">Dentist</option>
+														<option value="8">Nephrologist </option>
+														<option value="9">Internal medicine</option>
+														<option value="10">Nutritionist</option>
+													</select>
+												</div>
+								</div>
+								
+                            </div> <!-- row -->
+							
+					<!-- action -->
+							<div class="col-12 pt-4">
+								<div class="doctor-submit text-end">
+									<button type="button" class="btn btn-primary bg-grey me-1 cancel-form">Cancel</button>
+									<button type="submit" class="btn btn-primary submit-form">Submit</button>
+								</div>
+							</div> 	
+					</div> <!-- end of question -->
+							
+					</div> <!--card body-->
+				</div>  <!--card-->
+			</div>	<!--Content-->
+		</div>	<!--page-wrapper-->
+		
+		
+		
+		
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/feather.min.js"></script>
+<script src="../assets/js/jquery.slimscroll.js"></script>
+<!-- Datepicker Core JS -->
+<script src="../assets/plugins/moment/moment.min.js"></script>
+<script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../assets/js/app.js"></script>
+	
+</body>
+
+</html>

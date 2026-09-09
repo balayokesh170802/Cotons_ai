@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+    <title>Cotons ai</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="../assets/css/feather.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/new-css.css">
+	<script src="https://kit.fontawesome.com/fe40853e81.js" crossorigin="anonymous"></script>
+     
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="../home.html" class="logo">
+						<img src="../assets/img/logo.svg" width="35" height="35" alt=""> <span><img src="../assets/img/text.svg" width="120" height="30" alt=""></span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><img src="../assets/img/icons/bar-icon.svg"  alt=""></a>
+            <a id="mobile_btn" class="mobile_btn float-start" href="#sidebar"><img src="../assets/img/icons/bar-icon.svg"  alt=""></a>
+			
+ <ul class="nav user-menu float-end">
+               
+               
+				<li class="nav-item dropdown has-arrow user-profile-list">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
+						<div class="user-names">
+                        	<span>Welcome</span> 
+					
+							<h5> Mr.Saravanan </h5>
+						</div>
+						<span class="user-img">
+							<img  src="../assets/img/user-06.jpg"  alt="Admin">
+						</span>
+                    </a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-01.svg" alt=""></span> <span> Settings </span> </a>
+					<a class="dropdown-item" href="../index.html"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-02.svg" alt=""></span> <span> Logout </span> </a>
+               </div>
+                </li>
+				
+            </ul>
+            <div class="dropdown mobile-user-menu float-end">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    
+                    <a class="dropdown-item">Settings</a>
+                    <a class="dropdown-item" href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Menus</li>
+                            <li class="submenu">
+                                <a href="../home.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-17.svg"
+                                    alt=""></span> <span> Leads </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../leads/new-lead.html">New Lead</a></li>
+                                    <li><a href="../leads/visit-table.html">Visits</a></li>
+                                    <li><a href="../leads/demo.html">Demo</a></li>
+                                    <li><a href="../leads/trial.html">Trial</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../active-leads/active-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" 
+                                    alt=""></span> <span>Active Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../cold-leads/cold-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-18.svg" 
+                                    alt=""></span> <span>Cold Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../subscription/subscription.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-09.svg" 
+                                    alt=""></span> <span>Subscription</span></a>
+                            </li>
+                          <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg"
+                                    alt=""></span> <span> Support </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../support/device.html"> Device </a></li>
+                                    <li><a href="../support/software.html"> Software </a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-15.svg"
+                                    alt=""></span> <span> Inventory </span> <span class="menu-arrow"></span></a>
+				<ul style="display: none;">
+                                    <li class="submenu">
+								<a href="#"><span> Inward </span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="../inventory/return-device.html">Return Devices</a></li>
+                                        <li><a href="../inventory/import.html">Import</a></li>
+										<li><a href="../inventory/refurbish.html">Refurbish</a></li>
+										
+                                    </ul>
+                            </li>
+							<li class="submenu">
+								<a href="#"><span> Outward </span> <span class="menu-arrow"></span></a>
+									<ul style="display: none;">
+										<li><a href="../inventory/outward-trial.html">Trial</a></li>
+										<li><a href="../inventory/outward-subscription.html">Subscription</a></li>
+										<li><a href="../inventory/decommission.html">Decommission</a></li>
+									</ul>
+							</li>
+							
+							<li><a href="../inventory/stock.html">Stock</a></li>
+				</ul>
+					</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="breadcrumb">
+							
+								<li class="breadcrumb-item"><a href="#" class="text-secondary"> Inventory </a></li>
+                                <li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+                                <li class="breadcrumb-item"><a href="#" class="text-secondary">Inward</a></li>
+								<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+                                <li class="breadcrumb-item"><a href="../inventory/refurbish.html">Refurbish</a></li>
+								
+							
+							</ul>	
+						</div>
+					</div>
+				</div>
+				<!-- table -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-table show-entire">
+                            <div class="card-body">
+							
+							<!-- Table Header -->
+								
+								<div class="page-table-header mb-2">
+										<div class="row align-items-center">
+										<div class="col">
+										
+											<div class="doctor-table-blk d-flex justify-content-end">
+											
+                                                    <!-- <h3 class="table-heading d-none d-md-block">Refurbish Details</h3> -->
+                                           
+												<div class="doctor-search-blk">
+													<div class="top-nav-search">
+													<form>
+														<input type="text" class="form-control bg-grey" placeholder="Search here">
+														<a class="btn"></a>
+													</form>
+													</div>
+																										
+													<button type="button" class="btn btn-primary table-button ms-2" data-bs-toggle="modal" 
+                                                    data-bs-target="#bs-example-modal-lg"><img src="../assets/img/icons/plus.svg" class="py-2 px-1 rounded" alt=""></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- /Table Header -->
+								<div class="table-responsive text-nowrap">
+									<table class="datatable table-striped table">
+									
+                                    <thead class="table-secondary">
+                                        <tr>
+                                            <th>Model</th>
+                                            <th>Serial No</th>
+											<th>Product Serial</th>
+                                            <th>Production Date</th>
+                                            <th>Refurbish Date</th>
+											<th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>NK200</td>
+                                            <td>000002</td>
+											<td>411041900</td>
+											<td>2024-05-20</td>
+                                            <td>2024-06-20</td>
+											<td><span class="badge badge-success">Working</span></td>
+                                        </tr>
+										
+                                        <tr>
+                                            <td>NK100</td>
+                                            <td>000003</td>
+											<td>411041900</td>
+											<td>2024-04-15</td>
+											<td>2024-05-15</td>
+											<td><span class="badge badge-success">Working</span></td>
+                                        </tr>
+										
+                                        <tr>
+                                            <td>NK200</td>
+                                            <td>000004</td>
+											<td>411041900</td>
+											<td>2024-02-05</td>
+											<td>2024-05-05</td>
+											<td><span class="badge badge-success">Working</span></td>
+                                        </tr>
+										
+                                        <tr>
+                                            <td>NK100</td>
+                                            <td>000005</td>
+											<td>411041900</td>
+											<td>2024-07-17</td>
+											<td>2024-10-17</td>
+											<td><span class="badge badge-success">Working</span></td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td>NK200</td>
+                                            <td>000006</td>
+											<td>411041900</td>
+											<td>2024-03-02</td>
+											<td>2024-06-02</td>
+											<td><span class="badge badge-success">Working</span></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/js/jquery.slimscroll.js"></script>
+    <script src="../assets/js/app.js"></script>
+	
+	
+		<!-- /.modal -->
+		  <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-title" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myLargeModalLabel-title">Refurbish Details</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+							<div class="col-7 col-md-7 col-xl-5">  
+								<div class="input-block">
+									<input class="form-control" type="text" placeholder="Enter Serial number">
+								</div>
+							</div>
+                                             
+							<div class="col-1 col-md-3 col-xl-2">
+								<div class="doctor-submit">
+									<button type="submit" class="btn btn-primary submit-list-form mb-4 search">Search</button>
+								</div>
+							</div>
+                                               
+						</div>
+						
+							<div class="row mt-2">
+
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Serial Number</label>
+										<input class="form-control" type="text" value="000001" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Model</label>
+										<input class="form-control" type="text" value="NK100" disabled>
+									</div>
+								</div>
+											
+								<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+									<div class="input-block local-forms">
+										<label>Production Serial</label>
+										<input class="form-control" type="text" value="411041900" disabled>
+									</div>
+								</div>
+							</div>
+								
+						
+							<form id="myForm">
+							
+							<div class="col-12 col-sm-12 ">
+								<h5 class="fw-semibold pt-3">Briefing</h5>
+								<textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="4"></textarea>							
+							</div>
+							
+							
+							<div class="row pt-3">							
+									<div class="col-12">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div> 
+							</form>
+						
+						</div>
+					</div> <!-- /.modal-content -->
+				</div> <!-- /.modal-dialog -->
+			</div> <!-- /.modal -->
+</body>
+
+</html>

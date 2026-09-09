@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+	<title>Cotons ai</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
+	<!-- Feathericon CSS -->
+	 	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="../assets/css/feather.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/new-css.css">
+	<script src="https://kit.fontawesome.com/fe40853e81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="main-wrapper">
+		<div class="header">
+			<div class="header-left">
+				<a href="../home.html" class="logo">
+						<img src="../assets/img/logo.svg" width="35" height="35" alt=""> <span><img src="../assets/img/text.svg" width="120" height="30" alt=""></span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><img src="../assets/img/icons/bar-icon.svg" alt=""></a>
+			<a id="mobile_btn" class="mobile_btn float-start" href="#sidebar"><img src="../assets/img/icons/bar-icon.svg"
+					alt=""></a>
+			<div class="top-nav-search mob-view">
+			
+			</div>
+			<ul class="nav user-menu float-end">
+				<li class="nav-item dropdown has-arrow user-profile-list">
+					<a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
+						<div class="user-names">
+							<span>Welcome</span>
+
+							<h5> Mr.Saravanan </h5>
+						</div>
+						<span class="user-img">
+							<img src="../assets/img/user-06.jpg" alt="Admin">
+						</span>
+					</a>
+					<div class="dropdown-menu">
+					<a class="dropdown-item"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-01.svg" alt=""></span> <span> Settings </span> </a>
+					<a class="dropdown-item" href="../index.html"><span class="menu-side me-2"><img src="../assets/img/icons/profile-dash-icon-02.svg" alt=""></span> <span> Logout </span> </a>
+               </div>
+				</li>
+
+			</ul>
+			<div class="dropdown mobile-user-menu float-end">
+				<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i
+						class="fa-solid fa-ellipsis-vertical"></i></a>
+				<div class="dropdown-menu dropdown-menu-end">
+					
+					<a class="dropdown-item">Settings</a>
+					<a class="dropdown-item" href="../index.html">Logout</a>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Menus</li>
+                            <li class="submenu">
+                                <a href="../home.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-17.svg"
+                                    alt=""></span> <span> Leads </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../leads/new-lead.html">New Lead</a></li>
+                                    <li><a href="../leads/visit-table.html">Visits</a></li>
+                                    <li><a href="../leads/demo.html">Demo</a></li>
+                                    <li><a href="../leads/trial.html">Trial</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../active-leads/active-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-02.svg" 
+                                    alt=""></span> <span>Active Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../cold-leads/cold-leads.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-18.svg" 
+                                    alt=""></span> <span>Cold Leads</span></a>
+                            </li>
+                            <li class="main-menu">
+                                <a href="../subscription/subscription.html"><span class="menu-side"><img src="../assets/img/icons/menu-icon-09.svg" 
+                                    alt=""></span> <span>Subscription</span></a>
+                            </li>
+                          <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-08.svg"
+                                    alt=""></span> <span> Support </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="../support/device.html"> Device </a></li>
+                                    <li><a href="../support/software.html"> Software </a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#"><span class="menu-side"><img src="../assets/img/icons/menu-icon-15.svg"
+                                    alt=""></span> <span> Inventory </span> <span class="menu-arrow"></span></a>
+				<ul style="display: none;">
+                                    <li class="submenu">
+								<a href="#"><span> Inward </span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="../inventory/return-device.html">Return Devices</a></li>
+                                        <li><a href="../inventory/import.html">Import</a></li>
+										<li><a href="../inventory/refurbish.html">Refurbish</a></li>
+										
+                                    </ul>
+                            </li>
+							<li class="submenu">
+								<a href="#"><span> Outward </span> <span class="menu-arrow"></span></a>
+									<ul style="display: none;">
+										<li><a href="../inventory/outward-trial.html">Trial</a></li>
+										<li><a href="../inventory/outward-subscription.html">Subscription</a></li>
+										<li><a href="../inventory/decommission.html">Decommission</a></li>
+									</ul>
+							</li>
+							
+							<li><a href="../inventory/stock.html">Stock</a></li>
+				</ul>
+					</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+		<div class="page-wrapper">
+			<div class="content pb-4">
+
+<!-- Page Header -->
+	<div class="page-header">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../subscription/subscription.html" class="text-secondary"> Subscription </a></li>
+					<li class="breadcrumb-item"><i class="feather-chevron-right text-secondary"></i></li>
+					<li class="breadcrumb-item"><a href="../subscription/subscription-activity.html">Activity</a></li>
+					
+
+
+					<div class="col-auto text-end float-end ms-auto download-grp">
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary dropdown-toggle" 
+							data-bs-toggle="dropdown" aria-haspopup="true" 
+							aria-expanded="false"> + Activites</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" 
+								data-bs-toggle="modal" 
+								data-bs-target="#Appointment" href="#">Appointment</a>
+								<a class="dropdown-item" 
+								data-bs-toggle="modal" 
+								data-bs-target="#General-Visit" href="#">General Visit</a>
+								<a class="dropdown-item" 
+								data-bs-toggle="modal" 
+								data-bs-target="#Visit-Requested" href="#">Visit Requested</a>
+								<a class="dropdown-item" 
+								data-bs-toggle="modal" 
+								data-bs-target="#Contacted" href="#">Contacted</a>
+								<a class="dropdown-item" 
+								data-bs-toggle="modal" 
+								data-bs-target="#Attempt-to-Contacted" href="#">Attempt to Contact</a>
+							</div>
+						</div>						
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+			
+				<div class="card">
+				<div class="card-body">
+                    <div class="row pt-2">
+						<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+							<div class="input-block local-forms">
+								<label>Hospital Name </label>
+								<input class="form-control" type="text" value="Mayo Clinic" disabled>
+							</div>
+						</div>
+											
+						<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+							<div class="input-block local-forms">
+								<label>City Name </label>
+								<input class="form-control" type="text" value="Chennai" disabled>
+							</div>
+						</div>
+											
+						<div class="col-12 col-sm-4 col-md-4 col-xl-4">  
+							<div class="input-block local-forms">
+								<label>Pincode</label>
+								<input class="form-control" type="text" value="256752" disabled>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-body">
+						<div class="activity">
+							<div class="activity-box">
+								<ul class="activity-list">
+								
+									<li>
+										<div class="activity-user">
+												<img alt="" src="../assets/img/user-06.jpg" class="img-fluid rounded-circle">
+											</a>
+										</div>
+										<div class="activity-content timeline-group-blk">
+											<div class="timeline-group flex-shrink-0">
+												<h4>Today</h4>
+												<span class="time">11.20 AM</span>
+											</div>
+											<div class="comman-activitys flex-grow-1">
+											
+											<div class="d-flex align-items-center justify-content-between">
+												<h3 class="d-flex align-items-center bg-activity fs-6"><img src="../assets/img/icons/activity-icon-01.svg" alt="" class="pe-1" >Appointment</h3>
+												<label class="badge bg-secondary"> Subscription </label>
+											</div>
+										
+											<hr>
+												<h5 class="pt-3 d-flex align-items-center"><img src="../assets/img/icons/activity-icon-02.svg" alt="" class="pe-1">Date and Time</h5>
+												<h6 class="text-secondary ps-4">08/11/2024 (11:30 - 12:30)</h6>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-03.svg" alt="" class="pe-1">Doctor Name</h5>
+												<h6 class="text-secondary ps-4">Dr Saravanan</h6>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-04.svg" alt="" class="pe-1">Notes</h5>
+												<p class="text-secondary ps-4">Informed and asked to meet Gokul.</p>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="activity-user">
+												<img alt="" src="../assets/img/user-06.jpg" class="img-fluid rounded-circle">
+											</a>
+										</div>
+										<div class="activity-content timeline-group-blk">
+											<div class="timeline-group flex-shrink-0">
+												<h4>Yesterday</h4>
+												<span class="time">11.20 AM</span>
+											</div>
+											<div class="comman-activitys flex-grow-1">
+											
+											<div class="d-flex align-items-center justify-content-between">
+												<h3 class="d-flex align-items-center bg-activity fs-6"><img src="../assets/img/icons/activity-icon-05.svg" alt="" class="pe-1" >Contacted</h3>
+												<label class="badge bg-secondary"> Subscription </label>
+											</div>
+											
+												<hr>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-04.svg" alt="" class="pe-1">Notes</h5>
+												<p class="text-secondary pt-2 ps-4">I’m inquiring about the product details, including its quality and any other relevant specifications.</p>
+											</div>
+										</div>
+									</li>
+									
+									
+									<li>
+										<div class="activity-user">
+												<img alt="" src="../assets/img/user-06.jpg" class="img-fluid rounded-circle">
+											</a>
+										</div>
+										<div class="activity-content timeline-group-blk">
+											<div class="timeline-group flex-shrink-0">
+												<h4>04 Aug 2024</h4>
+												<span class="time">11.20 AM</span>
+											</div>
+											<div class="comman-activitys flex-grow-1">
+											
+											<div class="d-flex align-items-center justify-content-between">
+												<h3 class="d-flex align-items-center bg-activity fs-6"><img src="../assets/img/icons/activity-icon-06.svg" alt="" class="pe-1" >Attempt-to-Contact</h3>
+												<label class="badge bg-secondary"> Subscription </label>
+											</div>
+											
+												<hr>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-04.svg" alt="" class="pe-1">Notes</h5>
+												<p class="text-secondary pt-2 ps-4">Not reachable</p>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="activity-user">
+												<img alt="" src="../assets/img/user-06.jpg" class="img-fluid rounded-circle">
+											</a>
+										</div>
+										<div class="activity-content timeline-group-blk">
+											<div class="timeline-group flex-shrink-0">
+												<h4>03 Aug 2024</h4>
+												<span class="time">11.20 AM</span>
+											</div>
+											<div class="comman-activitys flex-grow-1">
+											
+											<div class="d-flex align-items-center justify-content-between">
+												<h3 class="d-flex align-items-center bg-activity fs-6"><img src="../assets/img/icons/activity-icon-08.svg" alt="" class="pe-1" >General Visit</h3>
+												<label class="badge bg-secondary"> Subscription </label>
+											</div>
+											
+												<hr>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-04.svg" alt="" class="pe-1">Notes</h5>
+												<p class="text-secondary pt-2 ps-4">I’m going to check if the product is working properly</p>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="activity-user">
+												<img alt="" src="../assets/img/user-06.jpg" class="img-fluid rounded-circle">
+											</a>
+										</div>
+										<div class="activity-content timeline-group-blk">
+											<div class="timeline-group flex-shrink-0">
+												<h4>02 Aug 2024</h4>
+												<span class="time">11.20 AM</span>
+											</div>
+											<div class="comman-activitys flex-grow-1">
+											
+											<div class="d-flex align-items-center justify-content-between">
+												<h3 class="d-flex align-items-center bg-activity fs-6"><img src="../assets/img/icons/activity-icon-06.svg" alt="" class="pe-1" >Visit Requested</h3>
+												<label class="badge bg-secondary"> Subscription </label>
+											</div>
+											
+												<hr>
+												<h5 class="pt-3 d-flex align-items-center"> <img src="../assets/img/icons/activity-icon-04.svg" alt="" class="pe-1">Notes</h5>
+												<p class="text-secondary pt-2 ps-4">Can you come and visit to address the issue we are having with the product?</p>
+											</div>
+										</div>
+									</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div class="sidebar-overlay" data-reff=""></div>
+
+
+<!--  Modal content for the appointment -->
+			   <div class="modal fade" id="Appointment" 
+			  tabindex="-1" role="dialog" aria-labelledby="Appointment"
+			   aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="Appointment-title">Appointment Details</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+
+							<form id="myForm">
+								<div class="row">
+							
+					
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="cal-icon">
+											<label>Date of Appointment <span class="login-danger">*</span></label>
+											<input class="form-control datetimepicker" type="text">
+										</div>
+									</div>
+									
+									<div class="col-12 col-md-6 col-xl-4">
+											<label>From <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control" id="datetimepicker3">
+											</div>
+									</div>
+									
+									<div class="col-12 col-md-6 col-xl-4">
+											<label>To <span class="login-danger">*</span></label>
+											<div class="time-icon">
+												<input type="text" class="form-control" id="datetimepicker4">
+											</div>
+									</div>
+
+									<div class="col-12 col-md-12 col-xl-12 p-2">
+											<label>Doctor Name <span class="login-danger">*</span></label>
+											<input class="form-control" type="text">
+									</div>
+								
+									<div class="col-12 col-sm-12 p-2">
+											<label>Notes  <span class="login-danger">*</span></label>
+                                    <textarea class="form-control form-control-sm" rows="4" type="text" aria-label=".form-control-lg example"> </textarea>
+									</div>
+								
+									<div class="col-12 pt-4">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div>
+							
+						
+
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			   
+			   <!--  Modal content for the Contacted -->
+				 <div class="modal fade" id="Contacted" 
+				 tabindex="-1" role="dialog" aria-labelledby="Contacted"
+				  aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h4 class="modal-title" id="Contacted-title">Contacted</h4>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+
+						
+								<div class="row">
+						
+								
+									<div class="col-12 col-sm-12">
+										
+											<label>Notes  <span class="login-danger">*</span></label>
+                                    <textarea class="form-control form-control-sm" rows="4" type="text" aria-label=".form-control-lg example"> </textarea>
+									
+									</div>
+								
+									<div class="col-12 pt-4">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div>
+						
+
+						   </div>
+					   </div><!-- /.modal-content -->
+				   </div><!-- /.modal-dialog -->
+			   </div>
+			   <!-- /.modal -->
+			   
+			   <!--  Modal content for the Attempt-to-Contact -->
+				 <div class="modal fade" id="Attempt-to-Contacted" 
+				 tabindex="-1" role="dialog" aria-labelledby="Attempt-to-Contacted"
+				  aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h4 class="modal-title" id="Attempt-to-Contacted-title">Attempt to contacted</h4>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+
+							
+								<div class="row">
+						
+								
+									<div class="col-12 col-sm-12">
+										
+											<label>Notes  <span class="login-danger">*</span></label>
+                                    <textarea class="form-control form-control-sm" rows="4" type="text" aria-label=".form-control-lg example"> </textarea>
+										
+									</div>
+								
+									<div class="col-12 pt-4">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div>
+							
+
+							
+						   </div>
+					   </div><!-- /.modal-content -->
+				   </div><!-- /.modal-dialog -->
+			   </div>
+			   <!-- /.modal -->
+			   
+			   <!--  Modal content for the General-Visit -->
+				 <div class="modal fade" id="General-Visit" 
+				 tabindex="-1" role="dialog" aria-labelledby="General-Visit"
+				  aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h4 class="modal-title" id="General-Visit-title">General Visit</h4>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+
+						
+								<div class="row">
+						
+								
+									<div class="col-12 col-sm-12">
+										
+											<label>Notes  <span class="login-danger">*</span></label>
+                                    <textarea class="form-control form-control-sm" rows="4" type="text" aria-label=".form-control-lg example"> </textarea>
+										
+									</div>
+								
+									<div class="col-12 pt-4">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div>
+							
+
+							
+						   </div>
+					   </div><!-- /.modal-content -->
+				   </div><!-- /.modal-dialog -->
+			   </div>
+			   <!-- /.modal -->
+			   
+			     <!--  Modal content for the Visit-Requested -->
+				 <div class="modal fade" id="Visit-Requested" 
+				 tabindex="-1" role="dialog" aria-labelledby="Visit-Requested"
+				  aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h4 class="modal-title" id="Visit-Requested-title">Visit Requested</h4>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+
+							<form>
+								<div class="row">
+						
+								
+									<div class="col-12 col-sm-12">
+										
+											<label>Notes  <span class="login-danger">*</span></label>
+                                    <textarea class="form-control form-control-sm" rows="4" type="text" aria-label=".form-control-lg example"> </textarea>
+										
+									</div>
+								
+									<div class="col-12 pt-4">
+										<div class="doctor-submit text-end">
+                                        <button type="button" class="btn btn-secondary-cancel bg-grey me-1" onclick="clearForm()">Clear</button>
+											<button type="submit" class="btn btn-primary submit-form">Submit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							
+						   </div>
+					   </div><!-- /.modal-content -->
+				   </div><!-- /.modal-dialog -->
+			   </div>
+			   <!-- /.modal -->
+
+
+	
+<script src="../assets/js/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/feather.min.js"></script>
+<script src="../assets/js/jquery.slimscroll.js"></script>
+<script src="../assets/js/select2.min.js"></script>
+
+<!-- Datepicker Core JS -->
+<script src="../assets/plugins/moment/moment.min.js"></script>
+<script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
