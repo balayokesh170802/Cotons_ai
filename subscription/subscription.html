@@ -189,7 +189,13 @@
                                             <td>91 98765 43210</td>
 											<td class="">10</td>
 											<td>  <span class="text-monthly fw-normal">  Monthly </span></td>
-                                            <td><span class="badge badge-appointment text-white ">Appointment</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment" selected>Appointment</option>
+													<option value="General Visit">General Visit</option>
+													<option value="Visit Requested">Visit Requested</option>
+												</select>
+											</td>
                                         </tr>
 									  </a>
                                         <tr>
@@ -199,7 +205,13 @@
                                             <td>91 98765 43217</td>
                                             <td>06</td>
 											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
-                                            <td><span class="badge badge-general text-white">General Visit</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="General Visit" selected>General Visit</option>
+													<option value="Visit Requested">Visit Requested</option>
+												</select>
+											</td>
                                         </tr>
                                         <tr>
 											<td>Johns Hopkins Hospital</td>
@@ -208,7 +220,13 @@
 											<td>91 98765 43217</td>
                                             <td>22</td>
 											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
-                                            <td><span class="badge badge-Visit text-white">Visit Requested</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="General Visit">General Visit</option>
+													<option value="Visit Requested" selected>Visit Requested</option>
+												</select>
+											</td>
                                         </tr>
                                         <tr>
 											<td>Madras Medical Mission</td>
@@ -217,9 +235,15 @@
 											<td>91 98765 43217</td>
 											<td>20</td>
 											<td>  <span class="text-monthly fw-normal">  Monthly </span></td>
-                                            <td><span class="badge badge-appointment text-white">Appointment</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment" selected>Appointment</option>
+													<option value="General Visit">General Visit</option>
+													<option value="Visit Requested">Visit Requested</option>
+												</select>
+											</td>
                                         </tr>
-                                       
+
                                         <tr>
 											<td>Great Ormond Street Hospital</td>
                                             <td>Santhosh</td>
@@ -227,7 +251,13 @@
 											<td>91 98765 43217</td>
 											<td>06</td>
 											<td> <span class="text-quarterly fw-normal">Quarterly </span></td>
-                                            <td><span class="badge badge-general text-white">General visit</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="General Visit" selected>General Visit</option>
+													<option value="Visit Requested">Visit Requested</option>
+												</select>
+											</td>
                                         </tr>
                                         
                                     </tbody>
@@ -249,6 +279,52 @@
 	<script src="../assets/js/dataTables.bootstrap4.min.js"></script>
 	<script src="../assets/js/jquery.slimscroll.js"></script>
 	<script src="../assets/js/app.js"></script>
+
+		<style>
+			.status-select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				border: none;
+				border-radius: 6px;
+				color: #fff;
+				font-size: 13px;
+				font-weight: 500;
+				padding: 7px 32px 7px 14px;
+				cursor: pointer;
+				outline: none;
+				min-width: 190px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-position: right 10px center;
+				background-size: 12px;
+			}
+			.status-select option {
+				background: #fff;
+				color: #333;
+				padding: 8px;
+			}
+			.status-select.status-appointment { background-color: #009efb; }
+			.status-select.status-general-visit { background-color: #55ce63; }
+			.status-select.status-visit-requested { background-color: #e8a317; }
+		</style>
+
+		<script>
+			$(document).ready(function() {
+				var statusColors = {
+					'Appointment': 'status-appointment',
+					'General Visit': 'status-general-visit',
+					'Visit Requested': 'status-visit-requested'
+				};
+				function updateSelectColor(select) {
+					var val = $(select).val();
+					$(select).removeClass(Object.values(statusColors).join(' '));
+					if (statusColors[val]) $(select).addClass(statusColors[val]);
+				}
+				$('.status-select').each(function() { updateSelectColor(this); });
+				$(document).on('change', '.status-select', function() { updateSelectColor(this); });
+			});
+		</script>
 </body>
 </html>
 

@@ -188,7 +188,15 @@
                                             <td>Saravanan</td>
                                             <td>Saravanan@gmail.com</td>
                                             <td>91 98765 43210</td>
-                                            <td><span class="badge badge-appointment ">Appointment</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment" selected>Appointment</option>
+													<option value="Negotiation">Negotiation</option>
+													<option value="Contacted">Contacted</option>
+													<option value="Attempt to Contact">Attempt to Contact</option>
+													<option value="Follow up">Follow up</option>
+												</select>
+											</td>
 											<td><a href="../subscription/new-subscription.html"><img src="../assets/img/icons/table-subscription-icon.svg" title="Subscription" alt=""></a><a href="../cold-leads/add-cold-leads.html"><img src="../assets/img/icons/table-pause-icon.svg" title="Cold Leads" alt="" class="ms-3"></a></td>
                                         </tr>
 									  </a>
@@ -197,7 +205,15 @@
                                             <td>John</td>
                                             <td>John@gmail.com</td>
                                             <td>91 98765 43217</td>
-                                            <td> <span class="badge badge-negotiation text-white">Negotiation</span></td>
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="Negotiation" selected>Negotiation</option>
+													<option value="Contacted">Contacted</option>
+													<option value="Attempt to Contact">Attempt to Contact</option>
+													<option value="Follow up">Follow up</option>
+												</select>
+											</td>
 											<td><a href="../subscription/new-subscription.html"><img src="../assets/img/icons/table-subscription-icon.svg" title="Subscription" alt=""></a><a href="../cold-leads/add-cold-leads.html"><img src="../assets/img/icons/table-pause-icon.svg" title="Cold Leads" alt="" class="ms-3"></a></td>
                                         </tr>
                                         <tr>
@@ -205,8 +221,16 @@
                                             <td>Kumar</td>
                                             <td>Kumar@gmail.com</td>
                                             <td>91 98865 43210</td>
-                                           
-                                            <td> <span class="badge badge-contacted text-white">Contacted</span></td>
+
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="Negotiation">Negotiation</option>
+													<option value="Contacted" selected>Contacted</option>
+													<option value="Attempt to Contact">Attempt to Contact</option>
+													<option value="Follow up">Follow up</option>
+												</select>
+											</td>
 											<td><a href="../subscription/new-subscription.html"><img src="../assets/img/icons/table-subscription-icon.svg" title="Subscription" alt=""></a><a href="../cold-leads/add-cold-leads.html"><img src="../assets/img/icons/table-pause-icon.svg" title="Cold Leads" alt="" class="ms-3"></a></td>
                                         </tr>
                                         <tr>
@@ -214,18 +238,34 @@
                                             <td>Madan</td>
                                             <td>Madan@gmail.com</td>
                                             <td>91 85765 43210</td>
-                                           
-                                            <td> <span class="badge badge-attempt-to-contact text-white">Attempt to Contact</span></td>
+
+                                            <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="Negotiation">Negotiation</option>
+													<option value="Contacted">Contacted</option>
+													<option value="Attempt to Contact" selected>Attempt to Contact</option>
+													<option value="Follow up">Follow up</option>
+												</select>
+											</td>
 											<td><a href="../subscription/new-subscription.html"><img src="../assets/img/icons/table-subscription-icon.svg" title="Subscription" alt=""></a><a href="../cold-leads/add-cold-leads.html"><img src="../assets/img/icons/table-pause-icon.svg" title="Cold Leads" alt="" class="ms-3"></a></td>
                                         </tr>
-                                       
+
                                         <tr>
 											<td>Great Ormond Street Hospital</td>
                                             <td>Santhosh</td>
                                             <td>Santhosh@gmail.com</td>
                                             <td>91 96765 43210</td>
-                                            
-                                             <td> <span class="badge badge-follow-up text-white">Follow up</span></td>
+
+                                             <td>
+												<select class="status-select">
+													<option value="Appointment">Appointment</option>
+													<option value="Negotiation">Negotiation</option>
+													<option value="Contacted">Contacted</option>
+													<option value="Attempt to Contact">Attempt to Contact</option>
+													<option value="Follow up" selected>Follow up</option>
+												</select>
+											</td>
 											<td><a href="../subscription/new-subscription.html"><img src="../assets/img/icons/table-subscription-icon.svg" title="Subscription" alt=""></a><a href="../cold-leads/add-cold-leads.html"><img src="../assets/img/icons/table-pause-icon.svg" title="Cold Leads" alt="" class="ms-3"></a></td>
                                         </tr>
                                         
@@ -248,5 +288,55 @@
 	<script src="../assets/js/dataTables.bootstrap4.min.js"></script>
 	<script src="../assets/js/jquery.slimscroll.js"></script>
 	<script src="../assets/js/app.js"></script>
+
+		<style>
+			.status-select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				border: none;
+				border-radius: 6px;
+				color: #fff;
+				font-size: 13px;
+				font-weight: 500;
+				padding: 7px 32px 7px 14px;
+				cursor: pointer;
+				outline: none;
+				min-width: 190px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='white' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-position: right 10px center;
+				background-size: 12px;
+			}
+			.status-select option {
+				background: #fff;
+				color: #333;
+				padding: 8px;
+			}
+			.status-select.status-appointment { background-color: #009efb; }
+			.status-select.status-negotiation { background-color: #17A2B8; }
+			.status-select.status-contacted { background-color: #6C757D; }
+			.status-select.status-attempt-to-contact { background-color: #e8a317; }
+			.status-select.status-follow-up { background-color: #55ce63; }
+		</style>
+
+		<script>
+			$(document).ready(function() {
+				var statusColors = {
+					'Appointment': 'status-appointment',
+					'Negotiation': 'status-negotiation',
+					'Contacted': 'status-contacted',
+					'Attempt to Contact': 'status-attempt-to-contact',
+					'Follow up': 'status-follow-up'
+				};
+				function updateSelectColor(select) {
+					var val = $(select).val();
+					$(select).removeClass(Object.values(statusColors).join(' '));
+					if (statusColors[val]) $(select).addClass(statusColors[val]);
+				}
+				$('.status-select').each(function() { updateSelectColor(this); });
+				$(document).on('change', '.status-select', function() { updateSelectColor(this); });
+			});
+		</script>
 </body>
 </html>
